@@ -11,12 +11,9 @@ public class Solution {
         System.out.println(isUgly(14));
     }
 
-
     public static boolean isUgly(int num) {
-
         if (num <= 0) {
             return false;
-
         }
         while (num % 2 == 0) {
             num /= 2;

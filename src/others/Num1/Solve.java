@@ -2,10 +2,12 @@ package others.Num1;
 
 import java.math.BigInteger;
 
-/** 有2n个人排队进电影院，票价是50美分。在这2n个人当中，其中n个人只有50美分，另外n个人有1美元（纸票子）。愚蠢的电影院开始卖票时1分钱也没有。
+/**
+ * 有2n个人排队进电影院，票价是50美分。在这2n个人当中，其中n个人只有50美分，另外n个人有1美元（纸票子）。愚蠢的电影院开始卖票时1分钱也没有。
  * 问： 有多少种排队方法 使得 每当一个拥有1美元买票时，电影院都有50美分找钱
  * 注： 1美元=100美分
  * 拥有1美元的人，拥有的是纸币，没法破成2个50美分
+ *
  * @author youzeliang
  * on 2018/4/11
  */
@@ -13,27 +15,35 @@ public class Solve {
     public static void main(String[] args) {
 
     }
-    static BigInteger getNumber(int n,int m){
+
+    static BigInteger getNumber(int n, int m) {
         //当m=1返回Ann即n!
-        if(m==1) return getResult(n,n);
+        if (m == 1) {
+            return getResult(n, n);
+        }
         //初始化result=0
-        BigInteger result =new BigInteger("0");
-        for(int i=0;i<=n-m+1;i++){
+        BigInteger result = new BigInteger("0");
+        for (int i = 0; i <= n - m + 1; i++) {
             //利用递归式子求解
-            result=result.add((getResult(n,i)).multiply(getNumber(n-i,m-1)));
+            result = result.add((getResult(n, i)).multiply(getNumber(n - i, m - 1)));
         }
         return result;
     }
-    static BigInteger getResult(int m,int n){
+
+    static BigInteger getResult(int m, int n) {
         //求Amn
-        BigInteger result =new BigInteger("1");
-        int count=0;
+        BigInteger result = new BigInteger("1");
+        int count = 0;
         //如果n为0,返回Am0即为1
-        if(n==0) return new BigInteger("1");
-        for(int i=m;;i--){
-            result =result.multiply(new BigInteger(""+i));
+        if (n == 0) {
+            return new BigInteger("1");
+        }
+        for (int i = m; ; i--) {
+            result = result.multiply(new BigInteger("" + i));
             count++;
-            if(count==n) break;
+            if (count == n) {
+                break;
+            }
         }
         return result;
     }
