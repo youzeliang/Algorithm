@@ -1,4 +1,4 @@
-package easy.num263;
+package LeetCode.easy.num263;
 
 /**
  * Created by youze on 18-7-18

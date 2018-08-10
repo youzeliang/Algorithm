@@ -1,4 +1,4 @@
-package easy.num461;
+package LeetCode.easy.num461;
 
 /**
  * Created by youze on 18-7-19

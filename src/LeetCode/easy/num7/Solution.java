@@ -1,4 +1,4 @@
-package easy.num7;
+package LeetCode.easy.num7;
 
 /**
  * @author youzeliang

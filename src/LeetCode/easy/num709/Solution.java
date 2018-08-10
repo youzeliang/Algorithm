@@ -1,4 +1,4 @@
-package easy.num709;
+package LeetCode.easy.num709;
 
 
 /**

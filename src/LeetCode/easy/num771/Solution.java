@@ -1,4 +1,4 @@
-package easy.num771;
+package LeetCode.easy.num771;
 
 /**
  * @author youzeliang
