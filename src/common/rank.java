@@ -12,6 +12,7 @@ public class rank {
 
     /**
      * 二分查找法
+     *
      * @param key
      * @param a
      * @return
