@@ -16,7 +16,7 @@ public class TEST {
         List lt = new ArrayList();
         Integer b = null;
 
-        String str=null;
+        String str = null;
         HashMap hashMap = new HashMap();
 
 
@@ -27,8 +27,8 @@ public class TEST {
         int vv = lt.size();
         int c = 0;
         System.out.println(vv);
-        int g = c+vv;
-      //  System.out.println(str.length());
+        int g = c + vv;
+        //  System.out.println(str.length());
         System.out.println(person.a());
     }
 
@@ -37,7 +37,7 @@ public class TEST {
         private int age;
 
 
-        public static String a(){
+        public static String a() {
             return null;
         }
 
