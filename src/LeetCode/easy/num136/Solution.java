@@ -14,8 +14,8 @@ package LeetCode.easy.num136;
  * <p>
  * Input: [4,1,2,1,2]
  * Output: 4
- *
- *  ^ 不同为1，
+ * <p>
+ * ^ 不同为1，
  */
 public class Solution {
     public int singleNumber(int[] nums) {
