@@ -4,10 +4,13 @@ import java.util.HashMap;
 
 /**
  * Created by youzeliang on 2018/3/2
+ *
+ * https://leetcode.com/problems/two-sum/
+ *
  */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
-        HashMap<Integer, Integer> m = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> m = new HashMap<>();
         int[] res = new int[2];
         for (int i = 0; i < nums.length; ++i) {
             m.put(nums[i], i);
