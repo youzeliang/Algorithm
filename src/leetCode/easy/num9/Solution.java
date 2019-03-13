@@ -4,6 +4,10 @@ package leetCode.easy.num9;
  * @author youzeliang
  * on 2018/3/2
  * 判断是不是回文数
+ * <p>
+ * Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+ * <p>
+ * https://leetcode.com/problems/palindrome-number/
  */
 public class Solution {
     public boolean isPalindrome(int x) {
@@ -18,5 +22,4 @@ public class Solution {
             return false;
         }
     }
-
 }
