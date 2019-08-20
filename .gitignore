@@ -1,0 +1,9 @@
+# jetBrain project files
+.idea/
+.idea
+
+
+# Mac DS_Store Files
+.DS_Store
+
+bin/*
