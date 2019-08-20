@@ -1,6 +1,7 @@
 # jetBrain project files
 .idea/
 .idea
+*.iml
 
 
 # Mac DS_Store Files
